@@ -5,9 +5,10 @@ interface ConhecedoraProps {
     cargo: string
     imagem: string
     corPrimaria: string
+    data: string
 }
 
-function Conhecedora({ nome, cargo, imagem, corPrimaria }: ConhecedoraProps) {
+function Conhecedora({ nome, cargo, imagem, corPrimaria, data }: ConhecedoraProps) {
     return (
         <div className="conhecedora">
             <div className="cabecalho" style={{backgroundColor: corPrimaria}}>
@@ -16,6 +17,7 @@ function Conhecedora({ nome, cargo, imagem, corPrimaria }: ConhecedoraProps) {
             <div className="rodape">
                 <h4>{nome}</h4>
                 <h5>{cargo}</h5>
+                <h5>{new Date(data).toLocaleDateString()}</h5>
             </div>
         </div>
     );

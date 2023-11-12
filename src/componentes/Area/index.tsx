@@ -23,6 +23,7 @@ function Area(props: AreaProps) {
                         cargo={conhecedora.cargo}
                         imagem={conhecedora.imagem}
                         corPrimaria={props.corPrimaria}
+                        data={conhecedora.data}
                     />)
                 }
             </div>

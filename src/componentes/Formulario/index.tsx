@@ -16,6 +16,7 @@ function Formulario(props: FormularioProps) {
     const [cargo, setCargo] = useState('');
     const [imagem, setImagem] = useState('');
     const [area, setArea] = useState('');
+    const [data, setData] = useState('');
 
     const aoSalvar = (evento: React.FormEvent<HTMLFormElement>) => {
         evento.preventDefault();
@@ -23,7 +24,8 @@ function Formulario(props: FormularioProps) {
             nome,
             cargo,
             imagem,
-            area
+            area,
+            data
         });
         setNome('');
         setCargo('');
@@ -54,6 +56,13 @@ function Formulario(props: FormularioProps) {
                     placeholder="Informe o endereço da imagem do perfil"
                     valor={imagem}
                     aoAlterar={valor => setImagem(valor)}
+                />
+                <CampoTexto
+                    label="Data de entrada no time"
+                    placeholder=""
+                    valor={data}
+                    aoAlterar={valor => setData(valor)}
+                    tipo="date"
                 />
                 <ListaSuspensa
                     obrigatorio={true}
