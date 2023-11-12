@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Prata', serif;
+    src: url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+}
+
+.organizacao {
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+
+.organizacao h2 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 400;
+    color: #6278F7;
+    position: relative;
+    display: inline;
+    padding: 20px 0;
+    font-family: 'Prata', serif;
+}
+
+.organizacao h2::before {
+    content: '';
+    position: absolute;
+    width: 64px;
+    height: 4px;
+    background-color: #6278F7;
+    bottom: 0;
+    left: 50%;
+    margin-left: -32px;
+}
+
+.organizacao p {
+    margin: 60px 0 25px;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.organizacao button {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

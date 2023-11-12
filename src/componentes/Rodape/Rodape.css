@@ -1,0 +1,26 @@
+.footer {
+    background: url('../../../public/imagens/rodape.jpg') center / cover fixed no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 120px;
+}
+
+.footer ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer ul li img {
+    width: 35px;
+}
+
+.footer p {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'montserrat';
+}

@@ -1,0 +1,32 @@
+.banner {
+    background: url('../../../public/imagens/bg.jpg') top center / cover fixed no-repeat;
+    padding: 80px 0 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.left h2 {
+    font-size: 72px;
+    color: #FFF;
+    font-weight: normal;
+    margin: 100px 0 0;
+    padding: 0;
+    font-family: 'prata', serif;
+}
+
+.left p {
+    font-size: 36px;
+    color: #FFF;
+    margin: 10px 0 0;
+    padding: 0;
+    font-family: 'montserrat';
+}
+
+.right {
+    padding-top: 20px;
+}
+
+.banner img {
+    max-width: 100%;
+}
