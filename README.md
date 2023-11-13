@@ -3,6 +3,6 @@
 Descrição completa em breve...
 
 ```
-npm i --save typescipt @type/node @types/react @types/react-dom @types/jest
+npm i --save typescipt @types/node @types/react @types/react-dom @types/jest
 npx tsc --init
 ```
